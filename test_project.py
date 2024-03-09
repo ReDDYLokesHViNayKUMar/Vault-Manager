@@ -8,7 +8,7 @@ def test_open_deposit_box(monkeypatch):
 
 def test_close_deposit_box(monkeypatch):
     monkeypatch.setattr("getpass.getpass", lambda _: "1234")
-    box_id = close_deposit_box(box_id='AK-1-2')
+    box_id = close_deposit_box(box_id='VK-1-2')
     if box_id:
          assert box_id in get_all_box_ids()  
     else:
@@ -17,7 +17,7 @@ def test_close_deposit_box(monkeypatch):
 def test_update_passkey(monkeypatch):
     responses = iter(['123', '1234'])
     monkeypatch.setattr('getpass.getpass', lambda _: next(responses))
-    box_id = update_passkey('AK-1-2')
+    box_id = update_passkey('VK-1-2')
     if box_id:
          assert box_id in get_all_box_ids()  
     else:

@@ -45,6 +45,10 @@ To install Pytest, type
 $ pip install pytest
 ```
 
+- By default, we initialize the Vault with `VAULT_IDENTIFIER` as `VK`, `VAULT_ROWS` as`2` and `VAULT_SLOTS_PER_ROW` as `3`.
+- Upon executing the program, you would be displayed with a list of helper commands and then prompted to Enter any command from the list.
+- The helper commands would help the user to organize and manage the Vault.
+
 ---
 
 ## Documentation
